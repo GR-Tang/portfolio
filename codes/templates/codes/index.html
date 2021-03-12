@@ -1,0 +1,34 @@
+{% extends "about/layout.html" %}
+{% load static %}
+{% block body %}
+<div class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <div class="w3-padding-64 w3-content">
+        <h2 class="w3-text-light-grey">encode()</h2>
+        <hr style="width:200px" class="w3-opacity">
+    
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half">
+            <img src="{% static 'codes/Screenshot16.jpg' %}" style="width:100%">
+            <img src="{% static 'codes/Screenshot18.jpg' %}" style="width:100%">
+            <img src="{% static 'codes/Screenshot20.jpg' %}" style="width:100%">
+            <img src="{% static 'codes/Screenshot22.jpg' %}" style="width:100%">
+          </div>
+    
+          <div class="w3-half">
+            <img src="{% static 'codes/Screenshot17.jpg' %}" style="width:100%">
+            <img src="{% static 'codes/Screenshot19.jpg' %}" style="width:100%">
+            <img src="{% static 'codes/Screenshot21.jpg' %}" style="width:100%">
+          </div>
+        <!-- End photo grid -->
+        </div>
+      <!-- End codes Section -->
+    </div>
+    <button class="w3-button w3-dark-grey w3-padding-large w3-section">
+        <a href="{% static 'codes/TelcoChurnV14.ipynb' %}" target="_blank" class="w3-hover-text-green"><i class="fa fa-angle-double-down w3-xlarge"></i> Download Project Jupyter Notebook</a>
+    </button>
+    <button class="w3-button w3-dark-grey w3-padding-large w3-section">
+        <a href="{% static 'codes/DataScienceProjectWork.pptx' %}" target="_blank" class="w3-hover-text-green"><i class="fa fa-angle-double-down w3-xlarge"></i> Download Project Slidedeck</a>
+    </button>
+</div>
+{% endblock %}

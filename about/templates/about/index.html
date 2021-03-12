@@ -1,0 +1,48 @@
+{% extends "about/layout.html" %}
+{% load static %}
+{% block body %}
+<div class="w3-content w3-justify w3-text-grey w3-padding-64">
+  <h2 class="w3-text-light-grey">def me():</h2>
+  <hr style="width:200px" class="w3-opacity">
+  <p>Mid-career professional currently learning in IBM Academy to hone his knowledge of designing, building and deploying analytic solutions in impactful real-world projects. 
+    Extensive experience in financial data analytics, visualisation and reporting in board & executive meetings. 
+    Proficient in coding, creative in software application design, and passionately curious in new technology.
+     Strongly believes technology best serves humanity by creating a better world for everyone and future generations.
+  </p>
+  <h2 class="w3-padding-16 w3-text-light-grey">sum(self)</h2>
+  <p class="w3-wide">Data Analytics</p>
+  <div class="w3-white">
+    <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+  </div>
+  <p class="w3-wide">Programming</p>
+  <div class="w3-white">
+    <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+  </div>
+  <p class="w3-wide">Design</p>
+  <div class="w3-white">
+    <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+  </div><br>
+  
+  <div class="w3-row w3-center w3-padding-10 w3-section w3-dark-grey">
+    <div class="w3-quarter w3-section">
+      <span class="w3-large"><img src="{% static 'about/ibm-data-science-practitioner-certificate.png' %}" style="width:60%"></span><br>
+      <a href='https://www.youracclaim.com/badges/763e4fe1-69ec-42c0-8f10-5f95edc04d80/public_url' target="_blank" class="w3-hover-text-green">IBM Data Science Practitioner</a>
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge"><img src="{% static 'about/applied-data-science-with-python-level-2.png' %}" style="width:60%"></span><br>
+      <a href='https://www.youracclaim.com/badges/87a807ea-cdf7-42e8-9e6c-6dc01e0f26bc/public_url' target="_blank" class="w3-hover-text-green">Applied Data Science with Python - Level 2</a>
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge"><img src="{% static 'about/ibm-cloud-computing-practitioner-certificate.png' %}" style="width:60%"></span><br>
+      <a href='https://www.youracclaim.com/badges/83bf0170-2377-45eb-a1ce-69637dbd253e/public_url' target="_blank" class="w3-hover-text-green">IBM Cloud Computing Practitioner</a>
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge"><img src="{% static 'about/enterprise-design-thinking-graduate-certificate.png' %}" style="width:60%"></span><br>
+      <a href='https://www.youracclaim.com/badges/e481c22e-eddc-428c-957d-4aba48b4607f/public_url' target="_blank" class="w3-hover-text-green">Enterprise Design Thinking Graduate</a>
+    </div>
+  </div>
+
+  <button class="w3-button w3-dark-grey w3-padding-large w3-section">
+    <a href="{% static 'about/me3.jpg' %}" target="_blank" class="w3-hover-text-green"><i class="fa fa-angle-double-up w3-xlarge"></i> Other Badges at Acclaim</a>
+  </button>
+  {% endblock %}
